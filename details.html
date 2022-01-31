@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Details</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+    style="background:linear-gradient(45deg,rgb(5, 2, 37),rgb(41, 82, 129))">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="instruments.html">Euphonious</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="instruments.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Instruments
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="strings.html">Strings</a></li>
+              <li><a class="dropdown-item" href="keyboards.html">Keyboards and Pianos</a></li>
+              <li><a class="dropdown-item" href="percussions.html">Percussions and Drums</a></li>
+              <li><a class="dropdown-item" href="woodwind.html">Woodwind</a></li>
+              <li><a class="dropdown-item" href="brass.html">Brass</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shopping.html">Shopping</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="details.html">Details</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid" margin:0>
+
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+  <div class="form-body" style="background:linear-gradient(45deg,rgb(42, 35, 114),rgb(41, 82, 129))">
+    <div class="row">
+      <div class="form-holder">
+        <div class="form-content">
+          <div class="form-items">
+
+            <h4>Fill in the data below.</h4>
+            <form class="requires-validation" novalidate>
+
+              <div class="col-md-12">
+                <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                <div class="valid-feedback">Username field is valid!</div>
+                <div class="invalid-feedback">Username field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                <div class="valid-feedback">Email field is valid!</div>
+                <div class="invalid-feedback">Email field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <select class="form-select mt-3" required>
+                  <option selected disabled value="">Select your Instrument</option>
+                  <option value="strings">Strings</option>
+                  <option value="keyandp">Keyboards and Pianos</option>
+                  <option value="panddrum">Percussions and Drums</option>
+                  <option value="woodwind">Woodwind</option>
+                  <option value="brass">Brass</option>
+                </select>
+                <div class="valid-feedback">You selected a position!</div>
+                <div class="invalid-feedback">Please select a position!</div>
+              </div>
+
+
+              <div class="col-md-12">
+                <input class="form-control" type="password" name="password" placeholder="Password" required>
+                <div class="valid-feedback">Password field is valid!</div>
+                <div class="invalid-feedback">Password field cannot be blank!</div>
+              </div>
+
+
+              <div class="col-md-12 mt-3">
+                <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+                <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+
+                <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+                <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+
+                <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
+                <label class="btn btn-sm btn-outline-secondary" for="secret">other</label>
+                <div class="valid-feedback mv-up">You selected a gender!</div>
+                <div class="invalid-feedback mv-up">Please select a gender!</div>
+              </div>
+
+
+
+              <div class="form-button mt-3">
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
